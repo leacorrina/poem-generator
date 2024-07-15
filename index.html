@@ -7,36 +7,39 @@
     <title>Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Lea's AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Please enter a poem topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        since feeling is first <br />
-        who pays any attention <br />
-        to the syntax of things <br />
-        will never wholly kiss you;
-      </div>
-    </main>
-    <footer>
-      This project was coded by Lea White, open-sourced on
-      <a href="https://github.com/leacorrina/poem-generator" target="_blank"
-        >GitHub</a
-      >, and hosted on
-      <a href="https://poem-generator-lea-white.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Lea's AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Please enter a poem topic"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          since feeling is first <br />
+          who pays any attention <br />
+          to the syntax of things <br />
+          will never wholly kiss you;
+        </div>
+      </main>
+      <footer>
+        This project was coded by Lea White, open-sourced on
+        <a href="https://github.com/leacorrina/poem-generator" target="_blank"
+          >GitHub</a
+        >, and hosted on
+        <a href="https://poem-generator-lea-white.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
