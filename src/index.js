@@ -18,8 +18,16 @@ function generatePoem(event) {
     "You are an Italian poet who loves writing poems in the style of e.e.cummings. Your mission is to generate a 5 line poem in basic HTML format and separate each line with a <br />. Sign the poem with 'SheCodes AI' inside a <strong> element, displayed below the poem.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  new Typewriter("#poem", {
+    strings: `Generating an Italian poem related to ${userInput.value}...`,
+    autoStart: true,
+    delay: 0.5,
+    cursor: "⌛",
+  });
+
   console.log("Generating poem");
-  console.log(`${userInput.value}`);
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
 

@@ -11,27 +11,25 @@
   <body>
     <div class="container">
       <header>
-        <h1>Lea's AI Poem Generator</h1>
+        <h1>Italian Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-request-form">
-          <input
-            type="text"
-            placeholder="Please enter a poem topic"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-input"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem">
-          since feeling is first <br />
-          who pays any attention <br />
-          to the syntax of things <br />
-          will never wholly kiss you;
+        <div class="form-container">
+          <form id="poem-request-form">
+            <input
+              type="text"
+              placeholder="Please enter a topic for an Italian poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-input"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">eg: sun, tomatoes, gelato</div>
         </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This project was coded by Lea White, open-sourced on
